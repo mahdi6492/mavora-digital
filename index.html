@@ -1,206 +1,239 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080b14">
-  <title>MAVORA DIGITAL | Creative Agency</title>
-  <meta name="description" content="MAVORA DIGITAL helps brands grow through creative advertising, AI video production, and digital marketing.">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #080b14;
-      color: #ffffff;
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 22px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #202638;
-    }
-
-    .logo {
-      font-size: 22px;
-      font-weight: 800;
-      letter-spacing: 2px;
-    }
-
-    .logo span {
-      color: #a78bfa;
-    }
-
-    .hero {
-      min-height: 75vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 70px 7%;
-      background: radial-gradient(ellipse at 80% 20%, #242052 0%, #080b14 60%);
-    }
-
-    .tag {
-      color: #c4b5fd;
-      letter-spacing: 3px;
-      font-size: 12px;
-      margin-bottom: 22px;
-    }
-
-    h1 {
-      font-size: clamp(42px, 9vw, 76px);
-      line-height: 1.1;
-      max-width: 850px;
-      margin-bottom: 24px;
-    }
-
-    h1 span {
-      color: #a78bfa;
-    }
-
-    .hero p {
-      color: #b8bfd0;
-      max-width: 600px;
-      font-size: 17px;
-      margin-bottom: 32px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #a78bfa;
-      color: #080b14;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 14px 24px;
-      border-radius: 7px;
-      width: fit-content;
-    }
-
-    section {
-      padding: 65px 7%;
-    }
-
-    h2 {
-      font-size: 32px;
-      margin-bottom: 12px;
-    }
-
-    .intro {
-      color: #aab2c5;
-      margin-bottom: 30px;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 18px;
-    }
-
-    .service {
-      padding: 25px;
-      border: 1px solid #293047;
-      border-radius: 12px;
-      background: #101522;
-    }
-
-    .service .number {
-      color: #a78bfa;
-      font-size: 13px;
-      margin-bottom: 12px;
-    }
-
-    .service h3 {
-      margin-bottom: 10px;
-    }
-
-    .service p {
-      color: #aab2c5;
-      font-size: 14px;
-    }
-
-    .contact {
-      background: #101522;
-      text-align: center;
-    }
-
-    .contact p {
-      color: #b8bfd0;
-      margin: 12px 0 25px;
-    }
-
-    footer {
-      padding: 25px 7%;
-      text-align: center;
-      color: #858da1;
-      font-size: 13px;
-      border-top: 1px solid #202638;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MAVORA DIGITAL | وكالة تسويق رقمي</title>
+<meta name="description" content="MAVORA DIGITAL - نصمم إعلانات إبداعية وندير حملات تسويقية تساعد علامتك التجارية على النمو.">
+<style>
+:root {
+  --bg:#080a12;
+  --panel:#101421;
+  --text:#f7f8ff;
+  --muted:#a7afc5;
+  --blue:#647bff;
+  --purple:#b35cff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:Arial,Tahoma,sans-serif;line-height:1.8;
+  overflow-x:hidden
+}
+a{color:inherit;text-decoration:none}
+.container{width:min(1120px,90%);margin:auto}
+header{
+  position:sticky;top:0;z-index:10;
+  background:rgba(8,10,18,.82);
+  backdrop-filter:blur(18px);
+  border-bottom:1px solid #ffffff12
+}
+.nav{
+  min-height:76px;display:flex;align-items:center;
+  justify-content:space-between;gap:20px
+}
+.logo{font-size:21px;font-weight:900;letter-spacing:1px}
+.logo span{color:#9b86ff}
+nav{display:flex;gap:24px;font-size:14px;color:var(--muted)}
+nav a:hover{color:white}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:12px 22px;border-radius:12px;font-weight:bold;
+  background:linear-gradient(110deg,var(--blue),var(--purple));
+  color:white;transition:.25s;border:0;cursor:pointer
+}
+.btn:hover{transform:translateY(-3px);filter:brightness(1.15)}
+.hero{
+  position:relative;min-height:650px;display:flex;
+  align-items:center;overflow:hidden
+}
+.glow{
+  position:absolute;width:420px;height:420px;border-radius:50%;
+  filter:blur(100px);opacity:.24;pointer-events:none;
+  background:#625bff;left:-100px;top:100px;
+  animation:float 8s ease-in-out infinite alternate
+}
+.glow.two{background:#b14dff;right:-150px;left:auto;top:250px}
+.hero-content{position:relative;z-index:1;max-width:780px;padding:90px 0}
+.eyebrow{
+  display:inline-block;padding:6px 14px;border:1px solid #8175ff55;
+  border-radius:50px;color:#c7bdff;background:#8c76ff10;
+  font-size:13px;margin-bottom:24px
+}
+h1{font-size:clamp(38px,7vw,76px);line-height:1.2;letter-spacing:-2px}
+.gradient{
+  background:linear-gradient(100deg,#8fa1ff,#ce8aff,#70e2ff);
+  -webkit-background-clip:text;background-clip:text;color:transparent
+}
+.hero p{max-width:600px;color:var(--muted);font-size:18px;margin:24px 0 30px}
+.actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn-outline{border:1px solid #ffffff2c;background:#ffffff08}
+.stats{display:flex;gap:40px;flex-wrap:wrap;margin-top:55px}
+.stat strong{display:block;font-size:23px}
+.stat span{font-size:13px;color:var(--muted)}
+section{padding:90px 0}
+.section-head{max-width:650px;margin-bottom:40px}
+.kicker{color:#a99aff;font-size:13px;font-weight:bold}
+h2{font-size:clamp(29px,4vw,44px);line-height:1.35;margin:10px 0 14px}
+.section-head p,.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{
+  padding:28px;border:1px solid #ffffff12;border-radius:20px;
+  background:linear-gradient(145deg,#131827,#0c0f19);
+  transition:transform .3s,border-color .3s
+}
+.card:hover{transform:translateY(-7px);border-color:#8b7cff66}
+.icon{
+  width:48px;height:48px;border-radius:14px;display:grid;
+  place-items:center;font-size:23px;margin-bottom:20px;
+  background:linear-gradient(135deg,#6778ff33,#bd69ff33)
+}
+.card h3{font-size:20px;margin-bottom:10px}
+.card p{font-size:14px;color:var(--muted)}
+.process{counter-reset:steps}
+.step{position:relative}
+.step-number{font-size:13px;color:#ad9aff;margin-bottom:14px}
+.cta{
+  padding:55px 35px;border-radius:28px;text-align:center;
+  border:1px solid #a18bff40;
+  background:radial-gradient(ellipse at top,#45328a55,transparent 65%),#101421
+}
+.cta p{color:var(--muted);max-width:580px;margin:12px auto 25px}
+footer{padding:30px 0;border-top:1px solid #ffffff12;color:var(--muted);font-size:13px}
+.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.reveal.show{opacity:1;transform:translateY(0)}
+@keyframes float{from{transform:translate(0,0)}to{transform:translate(40px,-35px)}}
+@media(max-width:760px){
+ nav{display:none}
+ .hero{min-height:590px}
+ .hero-content{padding:75px 0}
+ .grid{grid-template-columns:1fr}
+ section{padding:65px 0}
+ .stats{gap:25px}
+ .cta{padding:38px 20px}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*::before,*::after{animation:none!important;scroll-behavior:auto!important;transition:none!important}
+ .reveal{opacity:1;transform:none}
+}
+</style>
 </head>
 <body>
-  <header>
-    <div class="logo">MAVORA <span>DIGITAL.</span></div>
-  </header>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home">MAVORA <span>DIGITAL.</span></a>
+    <nav>
+      <a href="#home">الرئيسية</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#about">من نحن</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <a class="btn" href="#contact">ابدأ مشروعك ↗</a>
+  </div>
+</header>
 
-  <main>
-    <section class="hero">
-      <div class="tag">CREATIVE DIGITAL AGENCY</div>
-      <h1>Make Your Brand <span>Impossible to Ignore.</span></h1>
-      <p>
-        We create powerful advertisements, AI videos, and visual content
-        that help businesses capture attention and grow their brands.
-      </p>
-      <a class="btn" href="#services">Explore Our Services</a>
-    </section>
-
-    <section id="services">
-      <h2>Our Services</h2>
-      <p class="intro">Creative solutions built for ambitious brands.</p>
-
-      <div class="services">
-        <article class="service">
-          <div class="number">01 / ADVERTISING</div>
-          <h3>Digital Advertising</h3>
-          <p>Strategic advertising creatives designed to attract the right audience.</p>
-        </article>
-
-        <article class="service">
-          <div class="number">02 / AI PRODUCTION</div>
-          <h3>AI Video Creation</h3>
-          <p>Engaging AI-powered videos for products, brands, and social media.</p>
-        </article>
-
-        <article class="service">
-          <div class="number">03 / VISUAL DESIGN</div>
-          <h3>Creative Design</h3>
-          <p>Professional visuals and product advertisements that stand out.</p>
-        </article>
-
-        <article class="service">
-          <div class="number">04 / SOCIAL MEDIA</div>
-          <h3>Social Media Content</h3>
-          <p>Creative content to build a consistent and recognizable brand.</p>
-        </article>
+<main>
+<section class="hero" id="home">
+  <div class="glow"></div><div class="glow two"></div>
+  <div class="container">
+    <div class="hero-content reveal">
+      <div class="eyebrow">✦ شريكك في النمو الرقمي</div>
+      <h1>نحوّل أفكارك إلى<br><span class="gradient">نتائج تلفت الأنظار.</span></h1>
+      <p>في MAVORA DIGITAL، نجمع بين الإبداع والاستراتيجية لنصمم إعلانات مميزة وندير حملات تسويقية تساعد مشروعك على الوصول إلى جمهوره.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">خلينا نبدأ مشروعك ↗</a>
+        <a class="btn btn-outline" href="#services">اكتشف خدماتنا ↓</a>
       </div>
-    </section>
+      <div class="stats">
+        <div class="stat"><strong>01</strong><span>نفهم مشروعك</span></div>
+        <div class="stat"><strong>02</strong><span>نصمم استراتيجيتك</span></div>
+        <div class="stat"><strong>03</strong><span>نطوّر حملاتك</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="contact" id="contact">
-      <h2>Ready to Grow Your Brand?</h2>
-      <p>Let's create something remarkable for your business.</p>
-      <a class="btn" href="mailto:mahdiabboud34@gmail.com">Contact Our Team</a>
-    </section>
-  </main>
+<section id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">خدماتنا</div>
+      <h2>كل ما يحتاجه مشروعك<br><span class="gradient">ليظهر بصورة أقوى.</span></h2>
+      <p>خدمات تسويقية مصممة لتقديم علامتك التجارية بطريقة احترافية وجذابة.</p>
+    </div>
+    <div class="grid">
+      <article class="card reveal">
+        <div class="icon">✳</div>
+        <h3>تصميم الإعلانات</h3>
+        <p>أفكار إبداعية ومحتوى بصري جذاب يلفت الانتباه ويعرض منتجاتك بطريقة مميزة.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">↗</div>
+        <h3>إدارة الحملات الإعلانية</h3>
+        <p>تخطيط الحملات ومتابعة أدائها وتحسينها للوصول إلى الجمهور المناسب ضمن ميزانيتك.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">◎</div>
+        <h3>استراتيجية التسويق</h3>
+        <p>تحديد الجمهور المناسب ورسالة الإعلان وأهداف الحملة بما يتناسب مع مشروعك.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    © 2026 MAVORA DIGITAL. All rights reserved.
-  </footer>
+<section id="about">
+  <div class="container">
+    <div class="grid">
+      <div class="section-head reveal" style="margin-bottom:0">
+        <div class="kicker">لماذا MAVORA؟</div>
+        <h2>إبداع له هدف،<br><span class="gradient">وتسويق له معنى.</span></h2>
+      </div>
+      <div class="card reveal">
+        <h3>نفكر باستراتيجية</h3>
+        <p>نبدأ بفهم نشاطك التجاري وهدفك قبل اقتراح شكل الإعلان أو طريقة الحملة.</p>
+      </div>
+      <div class="card reveal">
+        <h3>نهتم بالتفاصيل</h3>
+        <p>نعمل على تقديم رسائل واضحة وتصاميم متناسقة مع هوية مشروعك.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="cta reveal">
+      <div class="kicker">جاهز للخطوة التالية؟</div>
+      <h2>خلّي مشروعك <span class="gradient">يكون حديث الناس.</span></h2>
+      <p>خبرنا عن مشروعك والنتيجة التي تريد الوصول إليها، ولنبدأ بوضع الخطوة الأولى معاً.</p>
+      <a class="btn" id="whatsapp" href="https://wa.me/000000000000" target="_blank" rel="noopener">تواصل معنا عبر واتساب ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <a class="logo" href="#home">MAVORA <span>DIGITAL.</span></a>
+    <span>© <span id="year"></span> MAVORA DIGITAL. جميع الحقوق محفوظة.</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+</script>
 </body>
 </html>
