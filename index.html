@@ -5,79 +5,168 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#080a12">
-<meta name="description" content="MAVORA DIGITAL - صناعة فيديوهات إعلانية احترافية وإدارة حملات تسويقية في سوريا والخليج.">
-<title>MAVORA DIGITAL | وكالة التسويق الرقمي</title>
+<meta name="description" content="MAVORA DIGITAL - صناعة فيديوهات إعلانية وإدارة الحملات الإعلانية للمشاريع والمتاجر في سوريا والخليج.">
+<title>MAVORA DIGITAL | صناعة الإعلانات وإدارة الحملات</title>
+
 <style>
 :root{
---bg:#080a12;--panel:#111522;--text:#f5f6ff;
---muted:#a6aec3;--blue:#657cff;--purple:#b35cff;
---line:#ffffff17
+  --bg:#080a12;
+  --panel:#111522;
+  --panel2:#151a2a;
+  --text:#f5f6ff;
+  --muted:#a6aec3;
+  --blue:#657cff;
+  --purple:#b35cff;
+  --line:#ffffff18;
+  --green:#29d391;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{background:var(--bg);color:var(--text);font-family:Arial,Tahoma,sans-serif;line-height:1.8;overflow-x:hidden}
+body{
+  background:var(--bg);color:var(--text);
+  font-family:Arial,Tahoma,sans-serif;line-height:1.85;
+  overflow-x:hidden
+}
 a{color:inherit;text-decoration:none}
-.container{width:min(1120px,91%);margin:auto}
-header{position:sticky;top:0;z-index:20;background:#080a12ed;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
-.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:10px 0}
-.logo{font-size:20px;font-weight:900;white-space:nowrap}
+.container{width:min(1140px,92%);margin:auto}
+header{
+  position:sticky;top:0;z-index:100;
+  background:#080a12ed;backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--line)
+}
+.nav{
+  min-height:75px;display:flex;align-items:center;
+  justify-content:space-between;gap:16px;flex-wrap:wrap;padding:10px 0
+}
+.logo{font-size:20px;font-weight:900;white-space:nowrap;letter-spacing:.4px}
 .logo span{color:#a995ff}
 nav{display:flex;gap:17px;font-size:13px;color:var(--muted)}
 nav a:hover{color:white}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 19px;border-radius:12px;background:linear-gradient(110deg,var(--blue),var(--purple));color:white;font-weight:bold;border:1px solid transparent;cursor:pointer;text-align:center;transition:.25s}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 18px;border-radius:12px;
+  background:linear-gradient(110deg,var(--blue),var(--purple));
+  color:white;font-weight:bold;border:1px solid transparent;
+  cursor:pointer;text-align:center;transition:.25s
+}
 .btn:hover{transform:translateY(-3px);filter:brightness(1.12)}
-.btn-outline{background:#ffffff08;border-color:#ffffff2a}
-.hero{min-height:590px;display:flex;align-items:center;position:relative;isolation:isolate;overflow:hidden}
-.glow{position:absolute;z-index:-1;width:390px;height:390px;border-radius:50%;filter:blur(105px);opacity:.26;background:#6559ff;left:-130px;top:60px;animation:float 9s ease-in-out infinite alternate}
+.btn-outline{background:#ffffff08;border-color:#ffffff28}
+.hero{
+  min-height:600px;display:flex;align-items:center;
+  position:relative;isolation:isolate;overflow:hidden
+}
+.glow{
+  position:absolute;z-index:-1;width:390px;height:390px;
+  border-radius:50%;filter:blur(110px);opacity:.25;
+  background:#6559ff;left:-130px;top:50px;
+  animation:float 9s ease-in-out infinite alternate
+}
 .glow.two{background:#a343ff;right:-150px;left:auto;top:260px}
-.hero-content{padding:80px 0;max-width:800px}
-.eyebrow{display:inline-block;padding:6px 14px;border-radius:50px;color:#c9bdff;background:#9b7aff12;border:1px solid #9b7aff4c;font-size:13px;margin-bottom:23px}
+.hero-content{padding:85px 0;max-width:830px}
+.eyebrow{
+  display:inline-block;padding:6px 14px;border-radius:50px;
+  color:#c9bdff;background:#9b7aff12;
+  border:1px solid #9b7aff4c;font-size:13px;margin-bottom:23px
+}
 h1{font-size:clamp(38px,7vw,72px);line-height:1.25;letter-spacing:-1px}
-.gradient{background:linear-gradient(100deg,#8fa1ff,#d18aff,#75e2ff);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p{font-size:17px;color:var(--muted);max-width:650px;margin:22px 0 28px}
+.gradient{
+  background:linear-gradient(100deg,#8fa1ff,#d18aff,#75e2ff);
+  -webkit-background-clip:text;background-clip:text;color:transparent
+}
+.hero p{font-size:17px;color:var(--muted);max-width:680px;margin:22px 0 28px}
 .actions{display:flex;flex-wrap:wrap;gap:12px}
 .stats{display:flex;flex-wrap:wrap;gap:35px;margin-top:42px}
 .stat strong{display:block;font-size:22px}
 .stat span{color:var(--muted);font-size:13px}
-section{padding:76px 0}
-.section-head{max-width:700px;margin-bottom:32px}
+section{padding:75px 0}
+.section-head{max-width:760px;margin-bottom:35px}
 .kicker{font-size:13px;color:#b6a4ff;font-weight:bold}
 h2{font-size:clamp(28px,4vw,42px);line-height:1.4;margin:8px 0 12px}
 .section-head p,.muted{color:var(--muted)}
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
-.card{min-width:0;padding:24px;border-radius:19px;background:linear-gradient(145deg,#141827,#0d101a);border:1px solid var(--line);transition:transform .3s,border-color .3s}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{
+  min-width:0;padding:24px;border-radius:19px;
+  background:linear-gradient(145deg,#141827,#0d101a);
+  border:1px solid var(--line);
+  transition:transform .3s,border-color .3s
+}
 .card:hover{transform:translateY(-5px);border-color:#9c84ff70}
-.icon{width:47px;height:47px;display:grid;place-items:center;border-radius:14px;margin-bottom:17px;font-size:22px;background:linear-gradient(135deg,#657cff30,#b35cff30)}
+.icon{
+  width:47px;height:47px;display:grid;place-items:center;
+  border-radius:14px;margin-bottom:17px;font-size:22px;
+  background:linear-gradient(135deg,#657cff30,#b35cff30)
+}
 .card h3{font-size:19px;margin-bottom:8px}
 .card p{color:var(--muted);font-size:14px}
-.section-intro{margin-bottom:25px;color:var(--muted)}
 .price-card{display:flex;flex-direction:column;position:relative}
-.price-card.featured{border-color:#ad8aff;background:radial-gradient(ellipse at top,#6545ac42,transparent 68%),#111421;box-shadow:0 0 35px #8d69ff12}
-.ribbon{display:inline-block;align-self:flex-start;font-size:11px;background:linear-gradient(100deg,#657cff,#b35cff);padding:4px 11px;border-radius:30px;margin-bottom:13px;font-weight:bold}
+.price-card.featured{
+  border-color:#ad8aff;
+  background:radial-gradient(ellipse at top,#6545ac42,transparent 68%),#111421;
+  box-shadow:0 0 35px #8d69ff12
+}
 .price-label{font-size:13px;color:#b7a6ff;font-weight:bold}
-.price{font-size:35px;font-weight:900;margin:9px 0 0;line-height:1.5}
+.ribbon{
+  display:inline-block;align-self:flex-start;font-size:11px;
+  background:linear-gradient(100deg,#657cff,#b35cff);
+  padding:4px 11px;border-radius:30px;margin-bottom:13px;font-weight:bold
+}
+.price{font-size:38px;font-weight:900;margin:9px 0 0;line-height:1.5}
 .price small{font-size:13px;color:var(--muted);font-weight:normal}
-.price-caption{font-size:12px;color:var(--muted);margin-bottom:14px}
-.features{list-style:none;margin:13px 0 23px;flex:1}
-.features li{font-size:13px;color:#d9dced;padding:6px 0}
+.price-caption{font-size:12px;color:var(--muted);margin-bottom:12px}
+.features{list-style:none;margin:13px 0 22px;flex:1}
+.features li{font-size:13px;color:#d9dced;padding:5px 0}
 .features li:before{content:"✓";color:#a997ff;margin-left:9px;font-weight:bold}
 .price-card .btn{width:100%;margin-top:auto}
-.note{border:1px solid var(--line);border-radius:13px;padding:15px 17px;color:var(--muted);font-size:13px;margin-top:20px}
-.category-title{display:flex;align-items:center;gap:12px;margin:0 0 22px}
+.category-title{display:flex;align-items:center;gap:13px;margin:0 0 22px}
 .category-title .icon{margin:0;flex-shrink:0}
 .category-title p{color:var(--muted);font-size:13px}
-.project-art{height:170px;border-radius:13px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;margin-bottom:17px;background:radial-gradient(ellipse at 50% 40%,#7552bb65,transparent 60%),#111522;border:1px solid #ffffff0d}
-.project-art:before,.project-art:after{content:"";position:absolute;border:1px solid #c2b1ff35;border-radius:50%;width:145px;height:145px;animation:spin 18s linear infinite}
+.badge{
+  display:inline-block;padding:4px 10px;border-radius:30px;
+  border:1px solid #ffffff20;font-size:11px;color:#c5b7ff;margin-bottom:10px
+}
+.note{
+  border:1px solid var(--line);border-radius:13px;
+  padding:16px 18px;color:var(--muted);font-size:13px;margin-top:22px;
+  background:#ffffff04
+}
+.custom-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:25px}
+.custom-card{
+  padding:25px;border:1px solid #8f79ff55;border-radius:18px;
+  background:radial-gradient(ellipse at top,#4c3a8740,transparent 70%),#101421
+}
+.custom-card h3{font-size:21px;margin-bottom:8px}
+.custom-card p{font-size:14px;color:var(--muted);margin-bottom:14px}
+.custom-card ul{list-style:none;margin-bottom:20px}
+.custom-card li{font-size:13px;padding:5px 0}
+.custom-card li:before{content:"✦";color:#b6a4ff;margin-left:8px}
+.project-art{
+  height:170px;border-radius:13px;display:flex;align-items:center;
+  justify-content:center;position:relative;overflow:hidden;margin-bottom:17px;
+  background:radial-gradient(ellipse at 50% 40%,#7552bb65,transparent 60%),#111522;
+  border:1px solid #ffffff0d
+}
+.project-art:before,.project-art:after{
+  content:"";position:absolute;border:1px solid #c2b1ff35;
+  border-radius:50%;width:145px;height:145px;
+  animation:spin 18s linear infinite
+}
 .project-art:after{width:185px;height:185px;animation-direction:reverse}
 .product-symbol{z-index:1;font-size:57px;filter:drop-shadow(0 0 18px #a68cff65)}
 .art-cosmetic{background:radial-gradient(ellipse at 50% 50%,#c44f9760,transparent 60%),#17101c}
 .art-perfume{background:radial-gradient(ellipse at 50% 50%,#d9a04a40,transparent 60%),#15120f}
-.tag{display:inline-block;border:1px solid #ffffff1c;border-radius:50px;padding:4px 10px;color:#c3b6ff;font-size:11px;margin-bottom:10px}
+.tag{
+  display:inline-block;border:1px solid #ffffff1c;border-radius:50px;
+  padding:4px 10px;color:#c3b6ff;font-size:11px;margin-bottom:10px
+}
 .project-note{font-size:12px;color:#b8a8ff;margin-top:10px}
 .steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
 .step-no{font-size:12px;color:#b6a4ff;margin-bottom:10px}
-.cta{text-align:center;padding:45px 23px;border-radius:25px;border:1px solid #9a83ff50;background:radial-gradient(ellipse at top,#44338a50,transparent 68%),#101421}
-.cta p{color:var(--muted);max-width:600px;margin:12px auto 22px}
+.cta{
+  text-align:center;padding:45px 23px;border-radius:25px;
+  border:1px solid #9a83ff50;
+  background:radial-gradient(ellipse at top,#44338a50,transparent 68%),#101421
+}
+.cta p{color:var(--muted);max-width:620px;margin:12px auto 22px}
 .contact-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
 footer{border-top:1px solid var(--line);padding:27px 0;color:var(--muted);font-size:12px}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
@@ -85,245 +174,445 @@ footer{border-top:1px solid var(--line);padding:27px 0;color:var(--muted);font-s
 .reveal.show{opacity:1;transform:translateY(0)}
 @keyframes float{to{transform:translate(35px,-30px)}}
 @keyframes spin{to{transform:rotate(360deg)}}
-@media(max-width:850px){nav{gap:11px;font-size:12px}.grid,.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:600px){
-.container{width:91%}
-.nav{gap:10px}
-nav{order:3;width:100%;overflow-x:auto;padding:5px 0 8px;gap:20px}
-nav a{white-space:nowrap}
-.nav>.btn{margin-right:auto}
-.hero{min-height:560px}
-.hero-content{padding:60px 0}
-h1{font-size:41px}
-.hero p{font-size:15px}
-.stats{gap:21px}
-section{padding:60px 0}
-.grid,.steps{grid-template-columns:1fr}
-.card{padding:21px}
-.project-art{height:190px}
-.cta{padding:33px 17px}
+@media(max-width:900px){
+  nav{gap:10px;font-size:12px}
+  .grid,.steps{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+@media(max-width:600px){
+  .container{width:91%}
+  .nav{gap:10px}
+  nav{order:3;width:100%;overflow-x:auto;padding:5px 0 8px;gap:20px}
+  nav a{white-space:nowrap}
+  .nav>.btn{margin-right:auto}
+  .hero{min-height:550px}
+  .hero-content{padding:60px 0}
+  h1{font-size:41px}
+  .hero p{font-size:15px}
+  .stats{gap:21px}
+  section{padding:58px 0}
+  .grid,.steps,.custom-grid{grid-template-columns:1fr}
+  .card,.custom-card{padding:21px}
+  .project-art{height:190px}
+  .cta{padding:33px 17px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal{opacity:1;transform:none}
+}
 </style>
 </head>
+
 <body>
 <header>
-<div class="container nav">
-<a class="logo" href="#home">MAVORA <span>DIGITAL.</span></a>
-<nav aria-label="القائمة الرئيسية">
-<a href="#home">الرئيسية</a>
-<a href="#services">خدماتنا</a>
-<a href="#portfolio">أعمالنا</a>
-<a href="#video-pricing">باقات الفيديو</a>
-<a href="#campaign-pricing">باقات الإدارة</a>
-<a href="#contact">تواصل معنا</a>
-</nav>
-<a class="btn small-btn wa-link" href="#" target="_blank" rel="noopener">واتساب ↗</a>
-</div>
+  <div class="container nav">
+    <a class="logo" href="#home">MAVORA <span>DIGITAL.</span></a>
+    <nav aria-label="القائمة الرئيسية">
+      <a href="#home">الرئيسية</a>
+      <a href="#services">خدماتنا</a>
+      <a href="#portfolio">أعمالنا</a>
+      <a href="#video-pricing">صناعة الفيديوهات</a>
+      <a href="#campaign-pricing">إدارة الحملات</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <a class="btn wa-link" href="#" target="_blank" rel="noopener">واتساب ↗</a>
+  </div>
 </header>
 
 <main>
 <section class="hero" id="home">
-<div class="glow"></div><div class="glow two"></div>
-<div class="container">
-<div class="hero-content reveal">
-<div class="eyebrow">✦ شريكك في النمو الرقمي</div>
-<h1>إعلانات تلفت الأنظار.<br><span class="gradient">ونمو يستحقه مشروعك.</span></h1>
-<p>نصنع فيديوهات إعلانية إبداعية، وندير الحملات التسويقية لمساعدة المشاريع والعلامات التجارية في سوريا والخليج على الوصول إلى جمهورها.</p>
-<div class="actions">
-<a class="btn wa-link" href="#" target="_blank" rel="noopener">ابدأ مشروعك معنا ↗</a>
-<a class="btn btn-outline" href="#pricing">اكتشف الباقات ↓</a>
-</div>
-<div class="stats">
-<div class="stat"><strong>01</strong><span>نفهم مشروعك</span></div>
-<div class="stat"><strong>02</strong><span>نصمم فكرتك</span></div>
-<div class="stat"><strong>03</strong><span>نطوّر حملتك</span></div>
-</div>
-</div>
-</div>
+  <div class="glow"></div><div class="glow two"></div>
+  <div class="container">
+    <div class="hero-content reveal">
+      <div class="eyebrow">✦ وكالة إبداع وتسويق رقمي</div>
+      <h1>إعلانات تلفت الأنظار.<br><span class="gradient">ونمو يستحقه مشروعك.</span></h1>
+      <p>
+        في MAVORA DIGITAL نصنع فيديوهات إعلانية إبداعية،
+        ونساعدك على إدارة حملاتك التسويقية بخطط واضحة
+        وباقات مرنة تناسب احتياجات مشروعك في سوريا والخليج.
+      </p>
+      <div class="actions">
+        <a class="btn wa-link" href="#" target="_blank" rel="noopener">ابدأ مشروعك معنا ↗</a>
+        <a class="btn btn-outline" href="#pricing">اكتشف الباقات ↓</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><strong>01</strong><span>نفهم مشروعك</span></div>
+        <div class="stat"><strong>02</strong><span>نصمم فكرتك</span></div>
+        <div class="stat"><strong>03</strong><span>نبدأ التنفيذ</span></div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="services">
-<div class="container">
-<div class="section-head reveal">
-<div class="kicker">خدماتنا</div>
-<h2>حلول إعلانية تناسب <span class="gradient">طموحك.</span></h2>
-<p>اختر الخدمة التي تحتاجها، وسنساعدك على تقديم مشروعك بصورة احترافية.</p>
-</div>
-<div class="grid">
-<article class="card reveal"><div class="icon">▶</div><h3>صناعة الفيديوهات الإعلانية</h3><p>فيديوهات منتجات بمشاهد جذابة وانتقالات مدروسة ورسالة تسويقية واضحة.</p></article>
-<article class="card reveal"><div class="icon">↗</div><h3>إدارة الحملات الإعلانية</h3><p>إعداد الحملات ومتابعة الأداء وتحسين الاستهداف بالتنسيق مع العميل.</p></article>
-<article class="card reveal"><div class="icon">✳</div><h3>الأفكار والنصوص الإعلانية</h3><p>أفكار إبداعية ونصوص تساعد على عرض المنتج والتواصل مع الجمهور المناسب.</p></article>
-</div>
-</div>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">خدماتنا</div>
+      <h2>حلول إعلانية تناسب <span class="gradient">طموحك.</span></h2>
+      <p>نقدم خدمات مرنة تساعدك على عرض منتجاتك والوصول إلى جمهورك بصورة احترافية.</p>
+    </div>
+    <div class="grid">
+      <article class="card reveal">
+        <div class="icon">▶</div>
+        <h3>صناعة الفيديوهات الإعلانية</h3>
+        <p>فيديوهات للمنتجات والعروض، مع أفكار إبداعية وافتتاحيات جذابة ونصوص تحفّز المشاهد على معرفة المزيد.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">↗</div>
+        <h3>إدارة الحملات الإعلانية</h3>
+        <p>إعداد الحملات ومتابعتها وتحسين الاستهداف والأداء، مع مراعاة هدف المشروع والميزانية المتاحة.</p>
+      </article>
+      <article class="card reveal">
+        <div class="icon">✳</div>
+        <h3>أفكار ونصوص تسويقية</h3>
+        <p>اقتراح أفكار إعلانية وكتابة النصوص والعناوين والدعوات لاتخاذ إجراء، بما يناسب المنتج والجمهور.</p>
+      </article>
+    </div>
+  </div>
 </section>
 
 <section id="portfolio">
-<div class="container">
-<div class="section-head reveal">
-<div class="kicker">معرض الأعمال</div>
-<h2>الإبداع يبدأ <span class="gradient">بفكرة.</span></h2>
-<p>نماذج مفاهيمية توضح أنواع الإعلانات التي يمكننا إنتاجها. هذه النماذج ليست مشاريع منفذة لعملاء.</p>
-</div>
-<div class="grid">
-<article class="card reveal">
-<div class="project-art"><span class="product-symbol">⌚</span></div>
-<span class="tag">إعلان ساعات</span><h3>Luxury Time</h3>
-<p>تصور إعلاني يركز على التفاصيل والإضاءة والإحساس بالفخامة.</p>
-<div class="project-note">نموذج تجريبي</div>
-</article>
-<article class="card reveal">
-<div class="project-art art-cosmetic"><span class="product-symbol">✿</span></div>
-<span class="tag">جمال وعناية</span><h3>Beauty Edit</h3>
-<p>فكرة إعلان لمستحضرات التجميل تعتمد على الحركة وجاذبية المنتج.</p>
-<div class="project-note">نموذج تجريبي</div>
-</article>
-<article class="card reveal">
-<div class="project-art art-perfume"><span class="product-symbol">♢</span></div>
-<span class="tag">عطور وهدايا</span><h3>Essence Noir</h3>
-<p>تصور إعلاني لعطر بأسلوب سينمائي داكن ولمسات ذهبية.</p>
-<div class="project-note">نموذج تجريبي</div>
-</article>
-</div>
-<div class="note">يمكنك استبدال هذه الرسومات لاحقاً بفيديوهاتك الفعلية وصور الإعلانات التي تنتجها.</div>
-</div>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">معرض الأعمال</div>
+      <h2>كل إعلان يبدأ <span class="gradient">بفكرة مميزة.</span></h2>
+      <p>نماذج توضيحية لأنواع الإعلانات التي يمكن إنتاجها. هذه النماذج تصورية وليست أعمالاً منفذة لعملاء.</p>
+    </div>
+    <div class="grid">
+      <article class="card reveal">
+        <div class="project-art"><span class="product-symbol">⌚</span></div>
+        <span class="tag">الساعات والإكسسوارات</span>
+        <h3>Luxury Time</h3>
+        <p>فكرة إعلان تبرز تفاصيل المنتج والإضاءة والحركة بأسلوب فاخر.</p>
+        <div class="project-note">نموذج تصوري</div>
+      </article>
+      <article class="card reveal">
+        <div class="project-art art-cosmetic"><span class="product-symbol">✿</span></div>
+        <span class="tag">الجمال والعناية</span>
+        <h3>Beauty Edit</h3>
+        <p>تصور إعلاني لمستحضرات التجميل يعتمد على الألوان والمشاهد الجذابة.</p>
+        <div class="project-note">نموذج تصوري</div>
+      </article>
+      <article class="card reveal">
+        <div class="project-art art-perfume"><span class="product-symbol">♢</span></div>
+        <span class="tag">العطور والهدايا</span>
+        <h3>Essence Noir</h3>
+        <p>فكرة إعلان عطر بإضاءة سينمائية ولمسات فاخرة تبرز شكل العبوة.</p>
+        <div class="project-note">نموذج تصوري</div>
+      </article>
+    </div>
+  </div>
 </section>
 
 <section id="pricing">
-<div class="container">
-<div class="section-head reveal">
-<div class="kicker">باقاتنا وأسعارنا</div>
-<h2>اختر الخدمة المناسبة <span class="gradient">لمشروعك.</span></h2>
-<p>أسعار واضحة ومبدئية، مع إمكانية تخصيص العمل حسب احتياجات مشروعك.</p>
-</div>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">الباقات والأسعار</div>
+      <h2>سعر واضح، وخيارات <span class="gradient">تناسب مشروعك.</span></h2>
+      <p>ابدأ بباقة صغيرة أو اختر العرض الأكبر، وإذا كان عندك طلب مختلف نصمم لك باقة خاصة.</p>
+    </div>
 
-<section id="video-pricing" style="padding:12px 0 45px">
-<div class="category-title reveal">
-<div class="icon">▶</div>
-<div><h2 style="font-size:25px;margin:0">أولاً: صناعة الفيديوهات الإعلانية</h2><p>فيديوهات إبداعية تساعد على إبراز منتجاتك.</p></div>
-</div>
-<div class="grid">
-<article class="card price-card reveal">
-<div class="price-label">01 / بداية</div><h3>فيديو سريع</h3>
-<div class="price">$15 <small>/ فيديو</small></div>
-<div class="price-caption">للمنتجات والعروض البسيطة</div>
-<ul class="features">
-<li>فيديو إعلاني واحد</li><li>مدة تصل إلى 15 ثانية</li><li>فكرة ونص إعلاني أساسي</li><li>تعديل واحد</li>
-</ul>
-<a class="btn btn-outline wa-link" href="#" data-package="باقة فيديو سريع بسعر 15 دولار" target="_blank" rel="noopener">اطلب الباقة</a>
-</article>
+    <section id="video-pricing" style="padding:10px 0 40px">
+      <div class="category-title reveal">
+        <div class="icon">▶</div>
+        <div>
+          <h2 style="font-size:26px;margin:0">أولاً: صناعة الفيديوهات الإعلانية</h2>
+          <p>إعلانات فيديو للمنتجات والمتاجر والخدمات والعروض.</p>
+        </div>
+      </div>
 
-<article class="card price-card reveal">
-<div class="price-label">02 / تطوير</div><h3>فيديو احترافي</h3>
-<div class="price">$35 <small>/ فيديو</small></div>
-<div class="price-caption">لمحتوى أكثر إبداعاً</div>
-<ul class="features">
-<li>فيديو إعلاني واحد</li><li>مدة تصل إلى 30 ثانية</li><li>سيناريو ومشاهد متعددة</li><li>نص إعلاني وعبارة تحفيز للشراء</li><li>تعديلان</li>
-</ul>
-<a class="btn btn-outline wa-link" href="#" data-package="باقة فيديو احترافي بسعر 35 دولار" target="_blank" rel="noopener">اطلب الباقة</a>
-</article>
+      <div class="grid">
+        <article class="card price-card reveal">
+          <div class="price-label">01 / باقة البداية</div>
+          <h3>فيديو إعلاني مفرد</h3>
+          <div class="price">$5</div>
+          <div class="price-caption">لفيديو إعلاني واحد</div>
+          <p>خيار اقتصادي لتجربة فكرة إعلانية أو عرض منتج واحد.</p>
+          <ul class="features">
+            <li>فيديو إعلاني واحد</li>
+            <li>فكرة مناسبة للمنتج</li>
+            <li>افتتاحية جذابة للمشهد</li>
+            <li>إبراز أهم ميزات المنتج</li>
+            <li>نص إعلاني مختصر عند الحاجة</li>
+            <li>دعوة واضحة للتواصل أو الشراء</li>
+            <li>مقاس فيديو يتم الاتفاق عليه مسبقاً</li>
+            <li>تعديل واحد ضمن نطاق الفكرة المتفق عليها</li>
+          </ul>
+          <a class="btn btn-outline wa-link" href="#" data-package="باقة فيديو إعلاني واحد بسعر 5 دولار" target="_blank" rel="noopener">اطلب الفيديو ↗</a>
+        </article>
 
-<article class="card price-card featured reveal">
-<div class="ribbon">⭐ العرض الاحترافي المميز</div>
-<div class="price-label">03 / صناعة إبداعية متكاملة</div><h3>باقة الفيديوهات الخرافية</h3>
-<div class="price">$100 <small>/ مشروع</small></div>
-<div class="price-caption">لمن يريد حزمة إعلانية متكاملة</div>
-<ul class="features">
-<li>حتى 4 فيديوهات إعلانية</li><li>مدة كل فيديو حتى 30 ثانية</li><li>أفكار وسيناريوهات متنوعة</li><li>هوك قوي ودعوة واضحة للشراء</li><li>تعديلات متفق عليها مسبقاً</li><li>مقاسات مناسبة لمنصات التواصل</li>
-</ul>
-<a class="btn wa-link" href="#" data-package="باقة الفيديوهات الاحترافية المميزة بسعر 100 دولار" target="_blank" rel="noopener">احجز العرض المميز ↗</a>
-</article>
-</div>
-</section>
+        <article class="card price-card reveal">
+          <div class="price-label">02 / باقة الأعمال</div>
+          <h3>4 فيديوهات إعلانية</h3>
+          <div class="price">$16</div>
+          <div class="price-caption">4 فيديوهات بسعر إجمالي 16 دولاراً</div>
+          <p>للمتاجر التي تحتاج عدة أفكار لعرض المنتجات أو اختبار أساليب إعلانية مختلفة.</p>
+          <ul class="features">
+            <li>4 فيديوهات إعلانية</li>
+            <li>أفكار متنوعة حسب المنتجات</li>
+            <li>افتتاحيات مختلفة لجذب الانتباه</li>
+            <li>إبراز المزايا والفوائد الرئيسية</li>
+            <li>نصوص إعلانية مناسبة لكل فيديو</li>
+            <li>دعوة للتواصل أو الشراء</li>
+            <li>تجهيز المقاس المتفق عليه للنشر</li>
+            <li>جولة تعديلات متفق عليها لكل فيديو</li>
+            <li>تسليم الملفات النهائية بصيغة مناسبة</li>
+          </ul>
+          <a class="btn btn-outline wa-link" href="#" data-package="باقة 4 فيديوهات إعلانية بسعر 16 دولاراً" target="_blank" rel="noopener">اطلب الباقة ↗</a>
+        </article>
 
-<section id="campaign-pricing" style="padding:35px 0 10px">
-<div class="category-title reveal">
-<div class="icon">↗</div>
-<div><h2 style="font-size:25px;margin:0">ثانياً: إدارة الحملات الإعلانية</h2><p>إعداد الحملات ومتابعتها وتحسين أدائها.</p></div>
-</div>
-<div class="grid">
-<article class="card price-card reveal">
-<div class="price-label">01 / بداية</div><h3>باقة إدارة أساسية</h3>
-<div class="price">$60 <small>/ شهرياً</small></div>
-<div class="price-caption">للمشاريع الصغيرة</div>
-<ul class="features">
-<li>إعداد حملة إعلانية واحدة</li><li>ضبط الجمهور والاستهداف</li><li>متابعة أساسية للأداء</li><li>ملخص نتائج شهري</li>
-</ul>
-<a class="btn btn-outline wa-link" href="#" data-package="باقة الإدارة الأساسية بسعر 60 دولار شهرياً" target="_blank" rel="noopener">اطلب الباقة</a>
-</article>
+        <article class="card price-card featured reveal">
+          <div class="ribbon">⭐ العرض الاحترافي المميز</div>
+          <div class="price-label">03 / باقة الإنتاج الموسع</div>
+          <h3>15 فيديو إعلاني</h3>
+          <div class="price">$79</div>
+          <div class="price-caption">15 فيديو بسعر إجمالي 79 دولاراً</div>
+          <p>حزمة كبيرة للمشاريع والمتاجر التي تحتاج محتوى إعلاني متنوعاً خلال فترة العمل المتفق عليها.</p>
+          <ul class="features">
+            <li>15 فيديو إعلاني</li>
+            <li>توزيع الأفكار حسب المنتجات والعروض</li>
+            <li>تنويع أساليب الافتتاحيات الإعلانية</li>
+            <li>سيناريو أو تصور لكل فيديو</li>
+            <li>إبراز ميزات وفوائد المنتجات</li>
+            <li>نصوص إعلانية ودعوات لاتخاذ إجراء</li>
+            <li>تنويع أساليب العرض البصري</li>
+            <li>تجهيز المقاسات المتفق عليها</li>
+            <li>تعديلات ضمن نطاق العمل المتفق عليه</li>
+            <li>تسليم الملفات النهائية مرتبة</li>
+            <li>تنظيم جدول تسليم مع العميل</li>
+          </ul>
+          <a class="btn wa-link" href="#" data-package="العرض الاحترافي لصناعة 15 فيديو إعلانياً بسعر 79 دولاراً" target="_blank" rel="noopener">احصل على العرض المميز ↗</a>
+        </article>
+      </div>
 
-<article class="card price-card reveal">
-<div class="price-label">02 / نمو</div><h3>باقة إدارة وتطوير</h3>
-<div class="price">$120 <small>/ شهرياً</small></div>
-<div class="price-caption">لمتابعة وتحسين مستمر</div>
-<ul class="features">
-<li>إدارة حتى حملتين إعلانيتين</li><li>مراجعة الاستهداف والنتائج</li><li>اقتراح تحسينات للأداء</li><li>تقرير شهري</li><li>تنسيق المواد الإعلانية مع العميل</li>
-</ul>
-<a class="btn btn-outline wa-link" href="#" data-package="باقة إدارة وتطوير الحملات بسعر 120 دولار شهرياً" target="_blank" rel="noopener">اطلب الباقة</a>
-</article>
+      <div class="note">
+        <strong>ملاحظة حول صناعة الفيديوهات:</strong>
+        المقصود بالفيديو الإعلاني ملف فيديو نهائي واحد. مدة الفيديو، وعدد النسخ والمقاسات، ومدة التسليم، والتعديلات المشمولة يتم تحديدها قبل البدء. التصوير الواقعي أو شراء مواد مدفوعة أو خدمات خارجية لا تدخل ضمن السعر إلا إذا اتفقنا على ذلك.
+      </div>
 
-<article class="card price-card featured reveal">
-<div class="ribbon">👑 العرض الأقوى والأكثر تكاملاً</div>
-<div class="price-label">03 / إدارة احترافية</div><h3>باقة MAVORA ELITE</h3>
-<div class="price">$250 <small>/ شهرياً</small></div>
-<div class="price-caption">حل متكامل للمشاريع الطموحة</div>
-<ul class="features">
-<li>إدارة حملات متعددة حسب الاتفاق</li><li>خطة تسويقية وأهداف واضحة</li><li>متابعة وتحسين أداء الحملات</li><li>اختبار الأفكار الإعلانية</li><li>تقرير أداء دوري</li><li>اجتماع متابعة شهري</li><li>تنسيق الفيديوهات الإعلانية ضمن نطاق متفق عليه</li>
-</ul>
-<a class="btn wa-link" href="#" data-package="باقة MAVORA ELITE الاحترافية بسعر 250 دولار شهرياً" target="_blank" rel="noopener">اطلب العرض الاحترافي ↗</a>
-</article>
-</div>
-</section>
-<div class="note">مهم: الأسعار هي أجور خدمات الوكالة المقترحة. ميزانية الإعلان التي تدفع للمنصات مثل Meta ليست مشمولة، ويتحملها العميل بشكل منفصل. عدد الحملات والفيديوهات والتعديلات ومواعيد التسليم يثبت في الاتفاق قبل بدء العمل. لا تتضمن أي باقة ضماناً لنتائج أو مبيعات محددة.</div>
-</div>
+      <div class="custom-grid">
+        <article class="custom-card reveal">
+          <div class="badge">طلب مفرد</div>
+          <h3>فيديو حسب الطلب</h3>
+          <div class="price">$5 <small>/ لكل فيديو</small></div>
+          <p>ما في داعي تختار باقة كبيرة. اطلب عدد الفيديوهات الذي تحتاجه.</p>
+          <ul>
+            <li>سعر كل فيديو 5 دولارات</li>
+            <li>مناسب لمنتج جديد أو عرض مؤقت</li>
+            <li>يمكن الاتفاق على أفكار متعددة</li>
+            <li>تحديد مدة الفيديو ومقاسه قبل التنفيذ</li>
+          </ul>
+          <a class="btn wa-link" href="#" data-package="طلب فيديوهات إعلانية مفردة، كل فيديو 5 دولارات" target="_blank" rel="noopener">اطلب فيديوهاتك ↗</a>
+        </article>
+
+        <article class="custom-card reveal">
+          <div class="badge">باقة خاصة</div>
+          <h3>صمّم باقتك بنفسك</h3>
+          <p>إذا كنت تريد عدداً مختلفاً من الفيديوهات أو عندك متطلبات خاصة، نتفق على التفاصيل والسعر قبل التنفيذ.</p>
+          <ul>
+            <li>تحديد عدد الفيديوهات المطلوب</li>
+            <li>تحديد نوع المنتجات والجمهور</li>
+            <li>اختيار الأسلوب الإبداعي</li>
+            <li>الاتفاق على المدة والمقاسات</li>
+            <li>عرض سعر واضح قبل بدء العمل</li>
+          </ul>
+          <a class="btn wa-link" href="#" data-package="باقة صناعة فيديوهات مخصصة حسب احتياجي" target="_blank" rel="noopener">اطلب عرض سعر مخصص ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="campaign-pricing" style="padding:38px 0 10px">
+      <div class="category-title reveal">
+        <div class="icon">↗</div>
+        <div>
+          <h2 style="font-size:26px;margin:0">ثانياً: إدارة الحملات الإعلانية</h2>
+          <p>إعداد الحملات وتنظيمها ومتابعتها وتحسينها حسب الاتفاق.</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <article class="card price-card reveal">
+          <div class="price-label">01 / باقة البداية</div>
+          <h3>إدارة 3 حملات</h3>
+          <div class="price">$30</div>
+          <div class="price-caption">السعر الإجمالي للباقة</div>
+          <p>خيار مناسب للمشاريع التي تريد تنظيم حملاتها والبدء بخطة إعلانية واضحة.</p>
+          <ul class="features">
+            <li>إدارة حتى 3 حملات ضمن نطاق الاتفاق</li>
+            <li>تحديد الهدف الأساسي لكل حملة</li>
+            <li>مراجعة الجمهور المستهدف</li>
+            <li>تنظيم إعدادات الحملة الإعلانية</li>
+            <li>مراجعة النصوص والمواد الإعلانية المقدمة</li>
+            <li>متابعة حالة الحملات أثناء فترة العمل المتفق عليها</li>
+            <li>مراجعة المؤشرات المتاحة للأداء</li>
+            <li>اقتراح تحسينات مناسبة عند الحاجة</li>
+            <li>ملخص بالعمل والنتائج المتاحة</li>
+          </ul>
+          <a class="btn btn-outline wa-link" href="#" data-package="باقة إدارة 3 حملات إعلانية بسعر 30 دولاراً" target="_blank" rel="noopener">اطلب الباقة ↗</a>
+        </article>
+
+        <article class="card price-card reveal">
+          <div class="price-label">02 / باقة النمو</div>
+          <h3>إدارة 8 حملات</h3>
+          <div class="price">$63</div>
+          <div class="price-caption">السعر الإجمالي للباقة</div>
+          <p>للمشاريع التي تحتاج إدارة عدد أكبر من الحملات وتنظيماً أفضل للأداء.</p>
+          <ul class="features">
+            <li>إدارة حتى 8 حملات ضمن نطاق الاتفاق</li>
+            <li>تنظيم أهداف الحملات حسب الأولوية</li>
+            <li>مراجعة الجمهور والاستهداف</li>
+            <li>متابعة إعدادات الحملة</li>
+            <li>مراجعة المواد الإعلانية المتاحة</li>
+            <li>متابعة مؤشرات الأداء المتوفرة</li>
+            <li>مقارنة النتائج بين الحملات</li>
+            <li>اقتراح تعديلات حسب البيانات</li>
+            <li>مراجعة توزيع الميزانية مع العميل</li>
+            <li>تقرير أو ملخص ختامي</li>
+            <li>تحديد الأولويات للمرحلة التالية</li>
+          </ul>
+          <a class="btn btn-outline wa-link" href="#" data-package="باقة إدارة 8 حملات إعلانية بسعر 63 دولاراً" target="_blank" rel="noopener">اطلب الباقة ↗</a>
+        </article>
+
+        <article class="card price-card featured reveal">
+          <div class="ribbon">👑 العرض الاحترافي الأكبر</div>
+          <div class="price-label">03 / باقة الإدارة الموسعة</div>
+          <h3>إدارة 12 حملة</h3>
+          <div class="price">$399</div>
+          <div class="price-caption">السعر الإجمالي للباقة</div>
+          <p>خيار موسع للمشاريع التي تحتاج تنظيماً ومتابعة أكبر لحملاتها الإعلانية.</p>
+          <ul class="features">
+            <li>إدارة حتى 12 حملة وفق نطاق العمل المتفق عليه</li>
+            <li>تخطيط أهداف الحملات وترتيب أولوياتها</li>
+            <li>مراجعة الاستهداف والجمهور</li>
+            <li>تنظيم الحملات حسب المنتجات والعروض</li>
+            <li>مراجعة المواد والنصوص الإعلانية</li>
+            <li>متابعة مؤشرات الأداء المتاحة</li>
+            <li>تحليل ومقارنة أداء الحملات</li>
+            <li>اقتراح اختبارات للأفكار الإعلانية</li>
+            <li>اقتراح تحسينات حسب النتائج</li>
+            <li>مراجعة توزيع الميزانية مع العميل</li>
+            <li>تقارير دورية وفق الجدول المتفق عليه</li>
+            <li>اجتماع متابعة عند الاتفاق</li>
+            <li>خطة توصيات للمرحلة القادمة</li>
+          </ul>
+          <a class="btn wa-link" href="#" data-package="العرض الاحترافي لإدارة 12 حملة إعلانية بسعر 399 دولاراً" target="_blank" rel="noopener">اطلب العرض الاحترافي ↗</a>
+        </article>
+      </div>
+
+      <div class="note">
+        <strong>كيف نحسب إدارة الحملات؟</strong>
+        الأسعار المذكورة هي أجور الإدارة للعدد المحدد من الحملات، وليست ميزانية الإعلان المدفوعة للمنصة. المقصود بالحملة يتم تحديده مع العميل، وكذلك مدة الإدارة، والمنصة الإعلانية، وعدد مرات المتابعة، والتقارير، وأي خدمات إضافية. لا تشمل الباقات ضماناً للمبيعات أو النتائج.
+      </div>
+
+      <div class="custom-grid">
+        <article class="custom-card reveal">
+          <div class="badge">إدارة حملة مفردة</div>
+          <h3>حملة حسب ميزانيتك</h3>
+          <div class="price">حسب الطلب</div>
+          <p>عندك حملة واحدة فقط؟ نحدد سعر إدارتها حسب ميزانية الإعلان ومتطلبات المشروع.</p>
+          <ul>
+            <li>تحديد المنصة والهدف الإعلاني</li>
+            <li>مراجعة الميزانية المتاحة</li>
+            <li>تحديد الجمهور المستهدف</li>
+            <li>توضيح مهام الإعداد والمتابعة</li>
+            <li>الاتفاق على سعر الإدارة قبل البدء</li>
+          </ul>
+          <a class="btn wa-link" href="#" data-package="إدارة حملة إعلانية مفردة، أريد تحديد السعر حسب ميزانيتي" target="_blank" rel="noopener">احسب سعر حملتي ↗</a>
+        </article>
+
+        <article class="custom-card reveal">
+          <div class="badge">باقة مخصصة</div>
+          <h3>خطة إعلانية على قياس مشروعك</h3>
+          <p>إذا كان عندك عدد حملات أو ميزانية أو أهداف مختلفة، نرتب لك عرض سعر مخصصاً.</p>
+          <ul>
+            <li>تحديد عدد الحملات المطلوبة</li>
+            <li>تحديد الميزانية الإعلانية</li>
+            <li>اختيار المنصات المناسبة</li>
+            <li>تحديد مدة الإدارة والمتابعة</li>
+            <li>الاتفاق على التقارير والخدمات الإضافية</li>
+            <li>تقديم السعر النهائي قبل بدء العمل</li>
+          </ul>
+          <a class="btn wa-link" href="#" data-package="أريد عرض سعر مخصص لإدارة الحملات حسب ميزانيتي واحتياجات مشروعي" target="_blank" rel="noopener">اطلب عرضاً مخصصاً ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <div class="note">
+      <strong>تنبيه مهم للعملاء:</strong>
+      ميزانية الإعلانات التي تُدفع إلى Meta أو أي منصة أخرى منفصلة تماماً عن أجور MAVORA DIGITAL. تفاصيل كل باقة ومدة تنفيذها وعدد التعديلات والتقارير المشمولة يتم تأكيدها كتابياً قبل بدء العمل. إعداد الحملات ومتابعتها لا يضمنان عدداً محدداً من المبيعات أو العملاء.
+    </div>
+  </div>
 </section>
 
 <section id="process">
-<div class="container">
-<div class="section-head reveal"><div class="kicker">آلية العمل</div><h2>من الفكرة إلى <span class="gradient">الإطلاق.</span></h2></div>
-<div class="steps">
-<article class="card reveal"><div class="step-no">الخطوة 01</div><h3>نفهم احتياجاتك</h3><p>نتعرف على مشروعك والجمهور الذي تريد الوصول إليه.</p></article>
-<article class="card reveal"><div class="step-no">الخطوة 02</div><h3>نختار الباقة</h3><p>نتفق على السعر ونطاق العمل وميزانية الإعلان إن وجدت.</p></article>
-<article class="card reveal"><div class="step-no">الخطوة 03</div><h3>ننفذ ونتابع</h3><p>نبدأ العمل ونقدم المواد والتقارير وفق الاتفاق.</p></article>
-</div>
-</div>
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">آلية العمل</div>
+      <h2>من الفكرة إلى <span class="gradient">التنفيذ.</span></h2>
+      <p>خطوات بسيطة حتى يكون كل شيء واضحاً قبل أن نبدأ.</p>
+    </div>
+    <div class="steps">
+      <article class="card reveal">
+        <div class="step-no">الخطوة 01</div>
+        <h3>نستمع لاحتياجك</h3>
+        <p>نتعرف على مشروعك ومنتجاتك وجمهورك والهدف الذي تريد الوصول إليه.</p>
+      </article>
+      <article class="card reveal">
+        <div class="step-no">الخطوة 02</div>
+        <h3>نحدد الباقة والتفاصيل</h3>
+        <p>نتفق على السعر وعدد الفيديوهات أو الحملات والمدة والخدمات المشمولة.</p>
+      </article>
+      <article class="card reveal">
+        <div class="step-no">الخطوة 03</div>
+        <h3>نبدأ التنفيذ والمتابعة</h3>
+        <p>ننفذ العمل المتفق عليه ونشاركك التحديثات والنتائج المتاحة.</p>
+      </article>
+    </div>
+  </div>
 </section>
 
 <section id="contact">
-<div class="container">
-<div class="cta reveal">
-<div class="kicker">جاهز لتطوير مشروعك؟</div>
-<h2>ابدأ خطوتك القادمة مع <span class="gradient">MAVORA.</span></h2>
-<p>راسلنا على واتساب، وأخبرنا بالخدمة التي تحتاجها وسنناقش معك التفاصيل.</p>
-<div class="contact-actions">
-<a class="btn wa-link" href="#" target="_blank" rel="noopener">تواصل عبر واتساب ↗</a>
-<a class="btn btn-outline" href="#pricing">استعرض الباقات</a>
-</div>
-</div>
-</div>
+  <div class="container">
+    <div class="cta reveal">
+      <div class="kicker">جاهز لتطوير مشروعك؟</div>
+      <h2>خلينا نصنع شيئاً <span class="gradient">مميزاً معاً.</span></h2>
+      <p>
+        أخبرنا عن مشروعك والمنتج الذي تريد الإعلان عنه،
+        وسنساعدك على اختيار الباقة المناسبة أو إعداد عرض مخصص لك.
+      </p>
+      <div class="contact-actions">
+        <a class="btn wa-link" href="#" target="_blank" rel="noopener">تواصل معنا على واتساب ↗</a>
+        <a class="btn btn-outline" href="#pricing">شاهد جميع الباقات</a>
+      </div>
+    </div>
+  </div>
 </section>
 </main>
 
 <footer>
-<div class="container footer-inner">
-<a class="logo" href="#home">MAVORA <span>DIGITAL.</span></a>
-<span>© <span id="year"></span> MAVORA DIGITAL. جميع الحقوق محفوظة.</span>
-<a href="#home">العودة للأعلى ↑</a>
-</div>
+  <div class="container footer-inner">
+    <a class="logo" href="#home">MAVORA <span>DIGITAL.</span></a>
+    <span>© <span id="year"></span> MAVORA DIGITAL. جميع الحقوق محفوظة.</span>
+    <a href="#home">العودة إلى الأعلى ↑</a>
+  </div>
 </footer>
 
 <script>
 const whatsappNumber = "963995614942";
-const defaultMessage = "مرحباً MAVORA DIGITAL، أريد الاستفسار عن خدماتكم.";
+const defaultMessage =
+  "مرحباً MAVORA DIGITAL، أريد الاستفسار عن خدماتكم وباقاتكم.";
 
-document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById("year").textContent =
+  new Date().getFullYear();
 
 document.querySelectorAll(".wa-link").forEach(link => {
   const packageName = link.dataset.package;
   const message = packageName
-    ? "مرحباً MAVORA DIGITAL، أريد الاستفسار عن " + packageName + "."
+    ? "مرحباً MAVORA DIGITAL، " + packageName + ". أريد معرفة التفاصيل وطريقة البدء."
     : defaultMessage;
-  link.href = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(message);
+
+  link.href =
+    "https://wa.me/" + whatsappNumber +
+    "?text=" + encodeURIComponent(message);
 });
 
 if ("IntersectionObserver" in window) {
@@ -334,10 +623,15 @@ if ("IntersectionObserver" in window) {
         observer.unobserve(entry.target);
       }
     });
-  }, {threshold: 0.12});
-  document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll(".reveal").forEach(el => {
+    observer.observe(el);
+  });
 } else {
-  document.querySelectorAll(".reveal").forEach(el => el.classList.add("show"));
+  document.querySelectorAll(".reveal").forEach(el => {
+    el.classList.add("show");
+  });
 }
 </script>
 </body>
